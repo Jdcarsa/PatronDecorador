@@ -11,22 +11,43 @@ import Decoradores.PaqueteDecorador;
  *
  * @author IngSis
  */
-public class PaqueteNature extends PaqueteDecorador{
-    
-    public PaqueteNature(IPaqueteViaje planDecorador) {
-        super(planDecorador);
-        setNombrePaquete("Paquete Nature");
-        setDias(super.getDias() + 5); 
-        setPrecio(super.getPrecio()  + 720);
+public class PaqueteNature extends PaqueteDecorador {
+
+    private String nombrePaquete = "Nature";
+    private double precio = 7720;
+    private int dias = 10;
+
+    public PaqueteNature(IPaqueteViaje paqueteV) {
+        super(paqueteV);
     }
-    
+
     @Override
-    public void mostrarCaracteristicasViaje(){
+    public String toString() {
+        return "Caracteristicas del Paquete " + nombrePaquete + " precio: " + precio + ", dias: " + dias
+                + " tiquetes aereos , habitacion en hotel estandar , alimentacion , vuelta a la isla  y recepcion con "
+                + "lei hawaino y camiseta de millonarios";
+    }
+
+    public void setNombrePaquete(String nombrePaquete) {
+        this.nombrePaquete = nombrePaquete;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+
+    public void setDias(int dias) {
+        this.dias = dias;
+    }
+
+    @Override
+    public void mostrarCaracteristicasViaje() {
+        super.mostrarCaracteristicasViaje();
         System.out.println(toString());
         agregarLugares();
     }
-    
-    public void agregarLugares(){
-        System.out.println("Ahora se puede visitar el Kualoa Ranch, el Maui Ocean Center y el Akaka Falls  State Park.\n");
+
+    public void agregarLugares() {
+        System.out.println("Ahora se puede escalar en el Waipio Valley, surfear en las playas Waikiki o Hanalei Bay y bucear en Hanauma Bay.\n");
     }
 }
