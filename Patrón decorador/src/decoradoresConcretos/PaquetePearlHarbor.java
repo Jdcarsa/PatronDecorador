@@ -48,6 +48,6 @@ public class PaquetePearlHarbor extends PaqueteDecorador {
     }
 
     public void agregarLugares() {
-        System.out.println("Ahora se puede escalar en el Waipio Valley, surfear en las playas Waikiki o Hanalei Bay y bucear en Hanauma Bay.\n");
+        System.out.println("Ahora puede visitar el  museo del mismo nombre, el palacio Iolani, el museo Bishop y el USS Arizona  Memoria.\n");
     }
 }

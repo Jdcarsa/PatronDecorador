@@ -48,6 +48,6 @@ public class PaqueteNature extends PaqueteDecorador {
     }
 
     public void agregarLugares() {
-        System.out.println("Ahora se puede escalar en el Waipio Valley, surfear en las playas Waikiki o Hanalei Bay y bucear en Hanauma Bay.\n");
+        System.out.println("Ahora puede visitar al Kualoa Ranch, el Maui Ocean Center y el Akaka Falls  State Park..\n");
     }
 }
