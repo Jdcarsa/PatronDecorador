@@ -18,10 +18,10 @@ public class PaqueteDecorador implements IPaqueteViaje {
         paqueteV.toString();
     }
     
-        @Override
+    @Override
     public String toString() {
-        return "Caracteristicas del Paquete "+ nombrePaquete  + "precio: " + precio + ", dias: " + dias
-                + "tiquetes aereos , habitacion en hotel estandar , alimentacion , vuelta a la isla  y recepcion con "
+        return "Caracteristicas del Paquete "+ nombrePaquete  + "\nPrecio: " + precio + ",      Dias: " + dias
+                + "\nDescripcion: Tiquetes aereos , habitacion en hotel estandar , alimentacion , vuelta a la isla  y recepcion con "
                 + "lei hawaino y camiseta de millonarios";
     }
 
